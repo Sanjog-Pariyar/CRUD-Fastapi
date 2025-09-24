@@ -9,6 +9,6 @@ jobs:
 
     steps:
       - name: pulling git repo
-        uses: actions/setup-python@v5
+        uses: actions/checkout@v5
       - name: Say hello to world
         run: echo "hello world"
