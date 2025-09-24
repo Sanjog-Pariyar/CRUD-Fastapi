@@ -1,0 +1,14 @@
+name: Build and Deploy Code
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: pulling git repo
+        uses: actions/setup-python@v5
+      - name: Say hello to world
+        run: echo "hello world"
